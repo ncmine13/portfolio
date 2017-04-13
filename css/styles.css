@@ -68,3 +68,42 @@ a {
 .art {
 	background-color: #36454f;
 }
+li {
+	list-style: none;
+}
+.item {
+	height: 300px;
+	display: none;
+	position: relative;
+}
+
+.span8 {
+	width: 600px;
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+}
+.carousel {
+	position: relative;
+	margin-bottom: 20px;
+	line-height: 1;
+}
+.span4 {
+	width: 300px;
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+}
+
+.rowz {
+	margin-left: -20px;
+
+}
+.carousel-inner {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+.active {
+	left: 0;
+}
