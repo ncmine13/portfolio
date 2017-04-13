@@ -5,6 +5,7 @@ body {
 .navbar{
 	margin-bottom:0px;
 	border-radius: 0px;
+	opacity: 0.5;
 }
 img {
 	width: 300px;
@@ -14,12 +15,12 @@ h1 {
 	margin: 50px 0px;
     font-size: 29px;
 	color: white;
-
 }
 
 .name {
 	font-size: 25px;
 }
+
 hr {
 	width: 700px;
     margin-bottom: 50px;
@@ -30,13 +31,13 @@ a {
 }
 .jumbotron {
 	margin-bottom: 0px;
-	height: 650px;
-	/*background: url('/Users/naomicmine/WDI_End/FinalProject/images/VisualArt/Candleballs2.jpg');*/
+	background: url('/Users/naomicmine/WDI_End/FinalProject/images/VisualArt/Candleballs2dark.jpg');
 	background-position: 0% 25%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
 	text-shadow: grey 1px 1px 3px;
+	height: 800px;
 }
 
 .mainImg {
@@ -106,4 +107,18 @@ li {
 }
 .active {
 	left: 0;
+}
+.pic {
+	height: 100%;
+	width: 100%;
+}
+.contact {
+	background-color: #6e7f80;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
 }

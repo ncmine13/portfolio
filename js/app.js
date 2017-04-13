@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
 
-	  $('#myCarousel').carousel({
-			  interval: 5000
-	  });
+	//   $('#myCarousel').carousel({
+	// 		  interval: 5000
+	//   });
 
 	  $('#carousel-text').html($('#slide-content-0').html());
 
@@ -20,4 +20,14 @@ jQuery(document).ready(function($) {
 			  var id = $('.item.active').data('slide-number');
 			  $('#carousel-text').html($('#slide-content-'+id).html());
 	  });
+
+	  $('#contactButton').on('click', function(){
+		  $(this).hide();
+	  });
+
+	  $('#nav').affix({
+      	offset: {
+        top: $('.jumbotron').height()
+      }
+	});
 });
