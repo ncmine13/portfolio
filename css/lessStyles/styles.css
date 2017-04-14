@@ -1,19 +1,19 @@
 body {
-  background-color: #B2906C;
+  background-color: #f9fffe;
   font-family: 'Montserrat', sans-serif;
   padding-top: 0px;
 }
 .navbar {
   margin-bottom: 0px;
-  border-radius: 0px;
+  borr-radius: 0px;
   opacity: 0.5;
 }
 img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
 }
 h1 {
   margin: 90px 0px;
+  margin-bottom: 30px;
   font-size: 40px;
   color: #13131B;
 }
@@ -26,7 +26,7 @@ hr {
 }
 a {
   color: #13131B;
-  text-decoration: underline;
+  text-coration: underline;
 }
 #heading {
   margin-top: 120px;
@@ -57,6 +57,8 @@ a {
   margin: 20px 5px;
   width: 85%;
   text-align: center;
+  margin-left: 8%;
+  height: 50px;
 }
 /*.btn {
 background-color: #536872;
@@ -117,6 +119,11 @@ background-color: #6e7f80;
 }
 .seeMore {
   background-color: #711F22;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
 }
 .btn-primary-outline {
   color: white;
@@ -130,4 +137,35 @@ background-color: #6e7f80;
   background: transparent;
   padding: 0px;
   margin-bottom: 0px;
+}
+.thumbnails {
+  padding: 0px;
+}
+.first {
+  padding-bottom: 30px;
+  box-shadow: 1px 2px 2px rgba(53, 48, 48, 0.81);
+}
+.moreTog {
+  padding-bottom: 20px;
+}
+.devImgRow {
+  padding: 0% 3%;
+}
+@media screen and (max-width: 1100px) {
+  .descr {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .descr {
+    height: 40px;
+  }
+  .project {
+    padding: 5% 10%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .project {
+    padding: 3% 3%;
+  }
 }

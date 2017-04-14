@@ -18,7 +18,7 @@
 			<div class="container-fluid" id="heading">
 				<h1 class="name">Naomi Mine</h1>
 				<h3>Web Developer. Artist. Thinker. Totally winging it.</h3>
-				<a class="btn btn-primary-outline">Contact</a>
+				<a class="btn btn-primary-outline" href="#contact">Contact</a>
 			</div>
 		</div>
 	</div>
@@ -31,65 +31,69 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="#">Bio</a></li>
-						<li class="active"><a href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Web Development</a></li>
-						<li><a href="#">Art</a></li>
+						<li><a href="#dev">Web Development</a></li>
+						<li><a href="#art">Art</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container text-center first">
+	<div class="container-fluid text-center first" id="dev">
 		<h1 class="headings">Development Projects</h1>
 		<hr>
-		<div class="row">
+		<div class="row devImgRow">
 			<!-- use button to show extra info -->
-			<div class="col-md-4 col-sm-4 col-xs-4">
-				<img src="images/VisualArt/Mockup.jpg" alt="" class="img-rounded webProj">
+			<div class="col-sm-12 col-md-4 project">
+				<img src="images/VisualArt/DrawTrivia.png" alt="" class="webProj">
 				<p class="descr">Built with HTML, CSS, and Vanilla JavaScript</p>
+				<div>
+					<div>
+						<div class="seeMoreDiv">
+							<a class="btn btn-primary seeMore" id="seeMoreButton" href="#seeMoreToggle" data-toggle="collapse">See More</a>
+							<br>
+							<div class="collapse moreTog" id="seeMoreToggle">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+							</div>
+							<a href="#">github link project 1</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-4">
-				<img src="images/VisualArt/Mockup2.jpg" alt="" class="img-rounded webProj">
+			<div class="col-sm-12 col-md-4 project">
+				<img src="images/VisualArt/Coffee.png" alt="" class="webProj">
 				<p class="descr">Built with Node.JS, Express, and Handlebars with a Mongo database.</p>
+				<div>
+					<div class="seeMoreDiv">
+						<a class="btn btn-primary seeMore" id="seeMoreButton3" href="#seeMoreToggle3" data-toggle="collapse">See More</a>
+						<br>
+						<div class="collapse moreTog" id="seeMoreToggle3">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+						</div>
+						<a href="#">github link project 3</a>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-4">
-				<img src="images/VisualArt/Mockup3.jpg" alt="" class="img-rounded webProj">
+			<div class="col-sm-12 col-md-4 project">
+				<img src="images/VisualArt/Mood.png" alt="" class="webProj">
 				<p class="descr">Built with a React front end and a Sinatra MVC, utilizing an Active Record ORM and Postgresql database.</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-4 col-sm-4 col-xs-4">
-				<a class="btn btn-primary seeMore" id="seeMoreButton" href="#seeMoreToggle" data-toggle="collapse">See More</a>
-				<br>
-				<div class="collapse" id="seeMoreToggle">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+				<div >
+					<div class="seeMoreDiv">
+						<a class="btn btn-primary seeMore" id="seeMoreButton2" href="#seeMoreToggle2" data-toggle="collapse">See More</a>
+						<br>
+						<div class="collapse moreTog" id="seeMoreToggle2">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+						</div>
+						<a href="#">github link project 2</a>
+					</div>
 				</div>
-				<a href="#">github link project 1</a>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-4">
-				<a class="btn btn-primary seeMore" id="seeMoreButton2" href="#seeMoreToggle2" data-toggle="collapse">See More</a>
-				<br>
-				<div class="collapse" id="seeMoreToggle2">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-				</div>
-				<a href="#">github link project 2</a>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-4">
-				<a class="btn btn-primary seeMore" id="seeMoreButton3" href="#seeMoreToggle3" data-toggle="collapse">See More</a>
-				<br>
-				<div class="collapse" id="seeMoreToggle3">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-				</div>
-				<a href="#">github link project 3</a>
 			</div>
 		</div>
 	</div>
 
 	<!-- <div style="height:100px"></div> -->
 
-	<div class="container-fluid art second">
+	<div class="container-fluid art second" id="art">
 		<div class="container text-center">
 
 			<div class="row hidden-phone" id="slider-thumbs">
@@ -99,27 +103,27 @@
 					<!-- Bottom switcher of slider -->
 
 					<ul class="thumbnails">
-						<li class="span2 col-lg-2">
+						<li class="span2 col-lg-2 col-md-4">
 							<a class="thumbnail" id="carousel-selector-0"><img src="images/Thumbnails/Alterity_1.jpg"></a>
 						</li>
 
-						<li class="span2 col-lg-2">
+						<li class="span2 col-lg-2 col-md-4">
 							<a class="thumbnail" id="carousel-selector-1"><img src="images/Thumbnails/Collage3.jpg"></a>
 						</li>
 
-						<li class="span2 col-lg-2">
+						<li class="span2 col-lg-2 col-md-4">
 							<a class="thumbnail" id="carousel-selector-2"><img src="images/Thumbnails/Digital1.jpg"></a>
 						</li>
 
-						<li class="span2 col-lg-2">
+						<li class="span2 col-lg-2 col-md-4">
 							<a class="thumbnail" id="carousel-selector-3"><img src="images/Thumbnails/Drawing.jpg"></a>
 						</li>
 
-						<li class="span2 col-lg-2">
+						<li class="span2 col-lg-2 col-md-4">
 							<a class="thumbnail" id="carousel-selector-4"><img src="images/Thumbnails/Painting.jpg"></a>
 						</li>
 
-						<li class="span2 col-lg-2">
+						<li class="span2 col-lg-2 col-md-4">
 							<a class="thumbnail" id="carousel-selector-5"><img src="images/Thumbnails/Planted3.jpg"></a>
 						</li>
 					</ul>
@@ -221,7 +225,7 @@
 
 	</div>
 
-	<div class="container-fluid contact">
+	<div class="container-fluid contact" id="contact">
 		<div class="container contact text-center">
 			<div class="row" >
 				<h1 style="margin-bottom: 10px;">Wanna get in touch?</h1>
