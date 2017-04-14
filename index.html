@@ -7,18 +7,18 @@
 	<title>Final Project</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/lessStyles/styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 
 
 </head>
 <body>
-
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center parallax-window" data-parallax="scroll" data-image-src="images/VisualArt/Collagebg.jpg">
 		<div class="container">
-			<div class="container-fluid">
+			<div class="container-fluid" id="heading">
 				<h1 class="name">Naomi Mine</h1>
-				<h3>Web Developer. Artist. Thinker.</h3>
+				<h3>Web Developer. Artist. Thinker. Totally winging it.</h3>
+				<a class="btn btn-primary-outline">Contact</a>
 			</div>
 		</div>
 	</div>
@@ -26,7 +26,6 @@
 	<div id="nav">
 		<div class="navbar navbar-default navbar-static">
 			<div class="container">
-				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				</a>
 				<div class="navbar-collapse collapse">
@@ -62,7 +61,7 @@
 
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-4">
-				<a class="btn btn-primary" id="seeMoreButton" href="#seeMoreToggle" data-toggle="collapse">See More</a>
+				<a class="btn btn-primary seeMore" id="seeMoreButton" href="#seeMoreToggle" data-toggle="collapse">See More</a>
 				<br>
 				<div class="collapse" id="seeMoreToggle">
 					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
@@ -70,7 +69,7 @@
 				<a href="#">github link project 1</a>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-4">
-				<a class="btn btn-primary" id="seeMoreButton2" href="#seeMoreToggle2" data-toggle="collapse">See More</a>
+				<a class="btn btn-primary seeMore" id="seeMoreButton2" href="#seeMoreToggle2" data-toggle="collapse">See More</a>
 				<br>
 				<div class="collapse" id="seeMoreToggle2">
 					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
@@ -78,7 +77,7 @@
 				<a href="#">github link project 2</a>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-4">
-				<a class="btn btn-primary" id="seeMoreButton3" href="#seeMoreToggle3" data-toggle="collapse">See More</a>
+				<a class="btn btn-primary seeMore" id="seeMoreButton3" href="#seeMoreToggle3" data-toggle="collapse">See More</a>
 				<br>
 				<div class="collapse" id="seeMoreToggle3">
 					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
@@ -88,7 +87,7 @@
 		</div>
 	</div>
 
-	<div style="height:100px"></div>
+	<!-- <div style="height:100px"></div> -->
 
 	<div class="container-fluid art second">
 		<div class="container text-center">
@@ -225,8 +224,8 @@
 	<div class="container-fluid contact">
 		<div class="container contact text-center">
 			<div class="row" >
-				<h1>Wanna get in touch?</h1>
-				<a class="btn btn-primary" id="contactButton" href="#contactToggle" data-toggle="collapse">Contact</a>
+				<h1 style="margin-bottom: 10px;">Wanna get in touch?</h1>
+				<a class="btn btn-primary-outline" id="contactButton" href="#contactToggle" data-toggle="collapse">Contact</a>
 			</div>
 			<div class="row collapse" id="contactToggle">
 				<div class="container contactData text-center col-md-8 col-md-offset-2">
@@ -242,7 +241,7 @@
 						<div class="form-group" align="center">
 							<textarea class="form-control" placeholder="What can I do for you?"></textarea>
 						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="submit" class="btn btn-default btn-primary-outline">Submit</button>
 					</form>
 				</div>
 			</div>
@@ -252,6 +251,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/parallax.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
