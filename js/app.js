@@ -1,8 +1,10 @@
+console.log("yayya")
+
 $(document).ready(function() {
 
-	//   $('#myCarousel').carousel({
-	// 		  interval: 5000
-	//   });
+	$('#myCarousel').carousel({
+		  interval: 5000
+	});
 
 	$('#carousel-text').html($('#slide-content-0').html());
 
@@ -16,10 +18,12 @@ $(document).ready(function() {
 
 
 	// When the carousel slides, auto update the text
-	$('#myCarousel').on('slid', function (e) {
-		var id = $('.item.active').data('slide-number');
+
+	$('#myCarousel').on('slid.bs.carousel', function (e) {
+		 var id = $('.item.active').data('slide-number');
 		$('#carousel-text').html($('#slide-content-'+id).html());
 	});
+
 
 	$('#contactButton').on('click', function(){
 		$(this).hide();

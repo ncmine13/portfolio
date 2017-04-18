@@ -3,11 +3,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   padding-top: 0px;
 }
-.navbar {
-  margin-bottom: 0px;
-  borr-radius: 0px;
-  opacity: 0.5;
-}
 img {
   width: 100%;
 }
@@ -25,8 +20,7 @@ hr {
   margin-bottom: 100px;
 }
 a {
-  color: #13131B;
-  text-coration: underline;
+  text-decoration: underline;
 }
 #heading {
   margin-top: 120px;
@@ -62,6 +56,7 @@ a {
 }
 .headings {
   margin: 20px 0px;
+  margin-top: 50px;
 }
 /*.btn {
 background-color: #536872;
@@ -69,7 +64,10 @@ padding: 10px 20px;
 margin-bottom: 20px;
 }*/
 .art {
-  background-color: #4E1718;
+  background-color: #13131B;
+}
+.art h1 {
+  color: white;
 }
 li {
   list-style: none;
@@ -103,6 +101,7 @@ li {
   overflow: hidden;
   width: 100%;
   position: relative;
+  height: 400px;
 }
 .active {
   left: 0;
@@ -144,6 +143,22 @@ background-color: #6e7f80;
 .thumbnails {
   padding: 0px;
 }
+.thumbnails li p {
+  color: white;
+}
+.modal {
+  background-color: black;
+  opacity: 0.5;
+}
+.thumbnail {
+  border: 1px solid #655e5e;
+  border-radius: 2px;
+  padding: 0px;
+  opacity: .4;
+}
+.thumbnail:hover {
+  opacity: 1;
+}
 .first {
   padding-bottom: 30px;
   box-shadow: 1px 2px 2px rgba(53, 48, 48, 0.81);
@@ -156,6 +171,21 @@ background-color: #6e7f80;
 }
 .seeMoreDiv {
   margin-bottom: 30px;
+}
+.btn-social-icon {
+  padding: 6px 35px;
+  font-size: 40px;
+  color: black;
+}
+.navbar {
+  margin-bottom: 0px;
+  border: none;
+  background-color: rgba(19, 19, 27, 0.62);
+  border-radius: 0px;
+}
+.navbar-nav > li > a {
+  color: white;
+  text-decoration: none;
 }
 @media screen and (max-width: 1100px) {
   .descr {
