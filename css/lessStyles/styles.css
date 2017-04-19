@@ -1,3 +1,8 @@
+html,
+body .item {
+  height: 100%;
+  width: 100%;
+}
 body {
   background-color: #f9fffe;
   font-family: 'Montserrat', sans-serif;
@@ -17,7 +22,7 @@ h1 {
 }
 hr {
   width: 700px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 a {
   text-decoration: underline;
@@ -55,8 +60,7 @@ a {
   height: 50px;
 }
 .headings {
-  margin: 20px 0px;
-  margin-top: 50px;
+  text-align: center;
 }
 /*.btn {
 background-color: #536872;
@@ -68,12 +72,12 @@ margin-bottom: 20px;
 }
 .art h1 {
   color: white;
+  margin-bottom: 50px;
 }
 li {
   list-style: none;
 }
 .item {
-  height: 300px;
   display: none;
   position: relative;
 }
@@ -82,7 +86,6 @@ li {
 }
 .carousel {
   position: relative;
-  margin-bottom: 20px;
   line-height: 1;
 }
 .span4 {
@@ -139,6 +142,7 @@ background-color: #6e7f80;
 }
 .thumbnails li p {
   color: white;
+  text-align: center;
 }
 .modal {
   background-color: black;
@@ -149,6 +153,21 @@ background-color: #6e7f80;
   border-radius: 2px;
   padding: 0px;
   opacity: .4;
+}
+.span2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.span2 a {
+  text-decoration: none;
+}
+.span2 a p {
+  opacity: 0;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.span2 a:hover p {
+  opacity: 1;
 }
 .thumbnail:hover {
   opacity: 1;
@@ -184,11 +203,43 @@ background-color: #6e7f80;
 .gal {
   margin-bottom: 20px;
 }
-.span12 {
-  margin: 0px 30px;
-}
 .hidden {
   display: none;
+}
+.thumbnail {
+  margin-bottom: 6px;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  margin-top: 10%;
+  width: 5%;
+}
+.imgModal {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+.item img {
+  opacity: 1;
+  height: auto;
+  width: auto;
+  max-height: 85%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.item h3 {
+  color: white;
+  text-align: center;
+}
+.modal-content {
+  border-radius: 2px;
+  background-color: transparent;
+}
+.modal-body {
+  padding: 0px;
+}
+.carousel-inner {
+  height: 100vh;
 }
 @media screen and (max-width: 1100px) {
   .descr {
