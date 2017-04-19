@@ -2,11 +2,11 @@ console.log("yayya")
 
 $(document).ready(function() {
 
-	$('#myCarousel').carousel({
-		  interval: 5000
-	});
+	// $('#myCarousel').carousel({
+	// 	  interval: 5000
+	// });
 
-	$('#carousel-text').html($('#slide-content-0').html());
+	// $('#carousel-text').html($('#slide-content-0').html());
 
 	//Handles the carousel thumbnails
 	$('[id^=carousel-selector-]').click( function(){
@@ -19,10 +19,10 @@ $(document).ready(function() {
 
 	// When the carousel slides, auto update the text
 
-	$('#myCarousel').on('slid.bs.carousel', function (e) {
-		 var id = $('.item.active').data('slide-number');
-		$('#carousel-text').html($('#slide-content-'+id).html());
-	});
+	// $('#myCarousel').on('slid.bs.carousel', function (e) {
+	// 	 var id = $('.item.active').data('slide-number');
+	// 	$('#carousel-text').html($('#slide-content-'+id).html());
+	// });
 
 
 	$('#contactButton').on('click', function(){
@@ -36,5 +36,19 @@ $(document).ready(function() {
 	});
 
 	$('.parallax-window').parallax();
+	// $("a.group_1").attr('rel', 'gallery').fancybox({
+	// 	'transitionIn'	:	'elastic',
+	// 	'transitionOut'	:	'elastic',
+	// 	'speedIn'		:	600,
+	// 	'speedOut'		:	200,
+	// 	'overlayShow'	:	false,
+	// 	'nextClick' 	: true,
+
+	// 	helpers : {
+	// 			  overlay : {closeClick: true}
+	// 			}
+	// });
+
+
 
 });
