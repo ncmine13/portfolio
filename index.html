@@ -9,11 +9,9 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/lessStyles/styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome-4.7.0 2/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
 
 </head>
@@ -51,6 +49,7 @@
 			<!-- use button to show extra info -->
 			<div class="col-sm-12 col-md-4 project">
 				<img src="images/ScreenShots/DrawTrivia.png" alt="" class="webProj">
+				<h3>DrawTrivia</h3>
 				<p class="descr">Built with HTML5, CSS3, and JavaScript.</p>
 				<div>
 					<div>
@@ -58,7 +57,7 @@
 							<a class="btn seeMore" id="seeMoreButton" href="#seeMoreToggle" data-toggle="collapse">See More</a>
 							<br>
 							<div class="collapse moreTog" id="seeMoreToggle">
-								<h4 class="moreDesc">I built this game with education and creativity in mind, ideally allowing the trivia, drawing, and guessing components to coalesce into a fun learning experience. As I expand upon the project, I would like to hone in on a particular discipline to thematicize the learning experience.</h4>
+								<h4 class="moreDesc">I built this game with education and creativity in mind, ideally allowing the trivia, drawing, and guessing components to coalesce into a fun learning experience. As I expand upon the project, I would like to hone in on a particular discipline, such as biology, to thematicize the learning experience.</h4>
 							</div>
 							<a class="gitLink" href="https://github.com/ncmine13/coffee-app">View on Github</a>
 						</div>
@@ -67,13 +66,14 @@
 			</div>
 			<div class="col-sm-12 col-md-4 project">
 				<img src="images/ScreenShots/Coffee.png" alt="" class="webProj">
+				<h3>Your Cup</h3>
 				<p class="descr">Built with NodeJS, Express, and Handlebars with a Mongo database.</p>
 				<div>
 					<div class="seeMoreDiv">
 						<a class="btn seeMore" id="seeMoreButton3" href="#seeMoreToggle3" data-toggle="collapse">See More</a>
 						<br>
 						<div class="collapse moreTog" id="seeMoreToggle3">
-							<h4 class="moreDesc">As a former barista and generally indecisive person, I had plenty of personal experience to draw from for my second project, an Express application aiming to help coffee drinkers select a drink from a full menu.</h4>
+							<h4 class="moreDesc">As a former barista and generally indecisive person, I had plenty of personal experience to draw from for my second project, a pair-programmed Express application aiming to help casual coffee drinkers choose a drink on the fly.</h4>
 						</div>
 						<a class="gitLink" href="https://github.com/ncmine13/Project_3_App">View on Github</a>
 					</div>
@@ -81,13 +81,14 @@
 			</div>
 			<div class="col-sm-12 col-md-4 project">
 				<img src="images/ScreenShots/Mood.png" alt="" class="webProj">
+				<h3>Mood Tracker</h3>
 				<p class="descr">Built with React and Sinatra with a Postresql database.</p>
 				<div >
 					<div class="seeMoreDiv">
 						<a class="btn seeMore" id="seeMoreButton2" href="#seeMoreToggle2" data-toggle="collapse">See More</a>
 						<br>
 						<div class="collapse moreTog" id="seeMoreToggle2">
-							<h4 class="moreDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+							<h4 class="moreDesc">This third project originated as an analog art-and-pseudo-reasearch hybrid project in my living room, and I've been thrilled to expand the mood tracking and mindfulness app into the digital realm.</h4>
 						</div>
 						<a class="gitLink" href="https://github.com/ncmine13/ncmine13.io">View on Github</a>
 					</div>
@@ -107,7 +108,6 @@
 					<ul class="thumbnails">
 						<li class="span2 col-lg-2 col-md-4 col-sm-6 col-xs-12">
 							<a title="Sculpture" href="#art"><img class="thumbnail img-responsive" id="sculpture" src="images/Thumbnails/Alterity_1.jpg"><p>Object Work and Sculpture</p></a>
-							
 						</li>
 
 						<li class="span2 col-lg-2 col-md-4 col-sm-6 col-xs-12">
@@ -240,7 +240,7 @@
 					<div class="item" id="drawing">
 						<h2>The Fishedman</h2>
 						<img class="thumbnail img-responsive" title="Drawing 1" src="images/VisualArt/Drawings/HS3.jpg">
-						<h3>Scratch board  | 2010</h3>
+						<h3>Scratchboard  | 2010</h3>
 					</div>
 					<div class="item" id="drawing">
 						<h2>Self-portrait</h2>
@@ -330,6 +330,7 @@
 	    				<div class="modal-content">
 	      					<div class="modal-body">
 	          					<div id="modal-carousel" class="carousel">
+	          					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	            					<div class="carousel-inner">           
 	          						</div>   
 	            					<a class="carousel-control left" href="#modal-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
