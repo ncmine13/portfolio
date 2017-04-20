@@ -1,4 +1,3 @@
-console.log("yayya")
 
 $(document).ready(function() {
 
