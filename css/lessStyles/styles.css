@@ -117,12 +117,24 @@ background-color: #6e7f80;
   z-index: 10;
 }
 .seeMore {
-  background-color: #711F22;
+  background-color: white;
+  color: #711F22;
   margin-bottom: 20px;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 20px;
-  border: none;
+  border: 2px solid #711F22;
+}
+.seeMore:hover {
+  transform: scale(1.025);
+  transition: all .2s;
+}
+.gitLink {
+  text-decoration: none;
+  color: #13131B;
+  font-weight: bolder;
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 .btn-primary-outline {
   color: white;
@@ -155,8 +167,10 @@ background-color: #6e7f80;
   opacity: .4;
 }
 .span2 {
-  padding-right: 10px;
-  padding-left: 10px;
+  /*	padding-right: 10px;
+    padding-left: 10px;
+*/
+  margin-bottom: 10px;
 }
 .span2 a {
   text-decoration: none;
@@ -223,7 +237,7 @@ background-color: #6e7f80;
   opacity: 1;
   height: auto;
   width: auto;
-  max-height: 85%;
+  max-height: 77%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -231,8 +245,13 @@ background-color: #6e7f80;
   color: white;
   text-align: center;
 }
+.item h2 {
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
 .modal-content {
-  border-radius: 2px;
+  h2border-radius: 2px;
   background-color: transparent;
 }
 .modal-body {
@@ -240,6 +259,19 @@ background-color: #6e7f80;
 }
 .carousel-inner {
   height: 100vh;
+}
+.moreDesc {
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -100px;
+  }
+  .carousel-control .glyphicon-chevron-right {
+    margin-right: -100px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .descr {
@@ -250,17 +282,19 @@ background-color: #6e7f80;
   .descr {
     height: 40px;
   }
-  .project {
-    padding: 5% 10%;
+  .span2 {
+    padding-right: 40px;
+    padding-left: 40px;
   }
-}
-@media screen and (max-width: 990px) {
   .project {
     padding: 3% 3%;
   }
   .headings {
     font-size: 25px;
     margin: 25px 0px;
+  }
+  li {
+    padding: 5px;
   }
   hr {
     width: 0px;
@@ -289,8 +323,14 @@ background-color: #6e7f80;
   }
   h4 {
     font-size: 15px;
-    text-align: left;
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .span2 {
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
