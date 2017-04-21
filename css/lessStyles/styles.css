@@ -136,6 +136,13 @@ background-color: #6e7f80;
   font-size: 17px;
   letter-spacing: 1px;
 }
+.appLink {
+  text-decoration: none;
+  color: #13131B;
+  font-weight: bolder;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
 .btn-primary-outline {
   color: white;
   border: 2px solid white;
