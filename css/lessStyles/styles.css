@@ -4,7 +4,7 @@ body .item {
   width: 100%;
 }
 body {
-  background-color: #f9fffe;
+  background-color: rgba(19, 19, 27, 0.62);
   font-family: 'Montserrat', sans-serif;
   padding-top: 0px;
 }
@@ -19,6 +19,9 @@ h1 {
 }
 .name {
   font-size: 25px;
+}
+#dev {
+  background-color: #f9fffe;
 }
 hr {
   width: 700px;
@@ -107,9 +110,10 @@ li {
   height: 100%;
   width: 100%;
 }
-/*.contact {
-background-color: #6e7f80;
-}*/
+#contact {
+  background-color: #f9fffe;
+  padding-bottom: 100px;
+}
 #nav.affix {
   position: fixed;
   top: 0;
@@ -349,5 +353,11 @@ background-color: #6e7f80;
   .span2 {
     padding-right: 50px;
     padding-left: 50px;
+  }
+  .parallax-window {
+    min-height: 450px;
+  }
+  #nav {
+    display: none;
   }
 }
