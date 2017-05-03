@@ -34,7 +34,7 @@ a {
   margin-top: 120px;
 }
 .jumbotron .container .container-fluid h1 {
-  margin-bottom: 50px;
+  margin-bottom: 10%;
   font-size: 60px;
   color: white;
 }
@@ -196,6 +196,7 @@ li {
 }
 .thumbnail:hover {
   opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 .first {
   padding-bottom: 30px;
@@ -243,6 +244,12 @@ li {
 .imgModal {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.47);
+}
+.imgModal div.modal-dialog {
+  transition: all 0.3s ease-in;
+}
+.imgModal div.modal-dialog .modal-content {
+  transition: all 0.3s ease-in;
 }
 .item img {
   opacity: 1;
