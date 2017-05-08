@@ -372,4 +372,7 @@ li {
   #nav {
     display: none;
   }
+  .glyphicon {
+    display: none;
+  }
 }
