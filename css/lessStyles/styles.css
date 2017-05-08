@@ -31,7 +31,12 @@ a {
   text-decoration: underline;
 }
 #heading {
-  margin-top: 120px;
+  margin-top: 100px;
+}
+#heading .glyphicon {
+  font-size: 50px;
+  color: white;
+  margin-top: 10%;
 }
 .jumbotron .container .container-fluid h1 {
   margin-bottom: 10%;
@@ -155,7 +160,7 @@ li {
   text-decoration: none;
 }
 .parallax-window {
-  min-height: 800px;
+  min-height: 700px;
   background: transparent;
   padding: 0px;
   margin-bottom: 0px;
